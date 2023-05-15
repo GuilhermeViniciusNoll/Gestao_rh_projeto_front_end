@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas</title>
+    <link rel="shortcut icon" href="./assets/ellipse.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/toast.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="../src/styles/globalStyle.css">
+    <link rel="stylesheet" href="../src/styles/header.css">
+    <link rel="stylesheet" href="../src/styles/index.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container-first">
+            <img class="header__img" src="./assets/ellipse.svg" alt="Logo">
+            <img class="header__tilte" src="./assets/kenzieEmpresas.svg" alt="kenzieEmpresas">
+        </div>
+        <div class="header__container-secound">
+            <button class="header__button header__button--home">Home</button>
+            <button class="header__button header__button--register">Cadastro</button>
+        </div>
+    </header>
+    <section class="section">
+        <div class="section__container-main">
+            <div class="section__container-first">
+                <div class="section__container-first--edit">
+                    <h1 class="section__title">Login</h1>
+                    <p class="section__description">Preencha os campos para realizar o login</p>
+                </div>
+            </div>
+            <div class="section__container-secound">
+                <input class="section__input section__input--email" type="email" placeholder="Seu e-mail">
+                <input class="section__input section__input--password" type="password" placeholder="Sua senha">
+            </div>
+            <div class="section__container-third">
+                <button class="section__button section__button--login">Login</button>
+                <p class="section__or">ou</p>
+                <button class="section__button section__button--register">Cadastre-se</button>
+            </div>
+        </div>
+        <div class="toast__container hidden">
+            <p></p>
+          </div>
+    </section>
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

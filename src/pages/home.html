@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas</title>
+    <link rel="shortcut icon" href="../assets/ellipse.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles/toast.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyle.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container-first">
+            <img class="header__img" src="../assets/ellipse.svg" alt="Logo">
+            <img class="header__tilte" src="../assets/kenzieEmpresas.svg" alt="kenzieEmpresas">
+        </div>
+        <div class="header__container-secound">
+            <button class="header__button header__button--login">Login</button>
+            <button class="header__button header__button--register">Cadastro</button>
+        </div>
+    </header>
+    <section class="section">
+        <img class="section__img" src="../assets/imageRectangle.svg" alt="image">
+        <div class="section__container-external">
+            <select class="section__select" name="departments" id="section-departments">
+                <option selected value="all">Selecionar Setor</option>
+            </select>
+            <div class="section__container-iternal">
+                <h2 class="section__title">Lista de Empresas</h2>
+                <ul class="section__ul"></ul>
+            </div>
+        </div>
+    </section>
+    <div class="toast__container hidden">
+        <p></p>
+    </div>
+    <script type="module" src="../scripts/home.js"></script>
+</body>
+
+</html>

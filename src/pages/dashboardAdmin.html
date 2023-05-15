@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas</title>
+    <link rel="shortcut icon" href="../assets/ellipse.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles/toast.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyle.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/dashboardAdmin.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container-first">
+            <img class="header__img" src="../assets/ellipse.svg" alt="Logo">
+            <img class="header__tilte" src="../assets/kenzieEmpresas.svg" alt="kenzieEmpresas">
+        </div>
+        <div class="header__container-secound">
+            <button class="header__button header__button--logout">Logout</button>
+        </div>
+    </header>
+    <div class="container-main">
+        <div class="container-select">
+            <select name="companies" id="companies">
+                <option selected disabled value="all">Selecionar Empresa</option>
+            </select>
+        </div>
+        <section class="section__departments">
+            <div class="section__departments-container">
+                <h1 class="section__departments-title">Departamentos</h1>
+                <button class="section__buttons-add">+ Criar</button>
+            </div>
+            <div class="section__container-departments">
+                <ul class="section__ul-departments"></ul>
+            </div>
+            <div class="section__container-empty-departments">
+                <h2 class="section__title-empty-departments">Empresa <span
+                        class="section__span-empty-departments"></span> não possui departamentos</h2>
+            </div>
+        </section>
+        <section class="section__users">
+            <h1 class="section__users-title">Usuários cadastrados</h1>
+            <div class="section__container-users">
+                <ul class="section__ul-users"></ul>
+            </div>
+            <div class="section__container-empty-users">
+                <h2 class="section__title-empty-users">Empresa <span class="section__span-empty-users"></span> não
+                    possui usuários</h2>
+            </div>
+        </section>
+    </div>
+    <div class="toast__container hidden">
+        <p></p>
+    </div>
+    <dialog class="dialog">
+    </dialog>
+    <script type="module" src="../scripts/dashboardAdmin.js"></script>
+</body>
+
+</html>
