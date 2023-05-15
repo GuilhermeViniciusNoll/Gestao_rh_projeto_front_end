@@ -9,9 +9,9 @@ async function authentication() {
         const profile = await requestProfile(token)
 
         if (profile.is_admin) {
-            window.location.replace("./pages/dashboardAdmin.html")
+            window.location.replace("./src/pages/dashboardAdmin.html")
         } else {
-            window.location.replace("./pages/dashboardUser.html")
+            window.location.replace("./src/pages/dashboardUser.html")
         }
     } else {
         buttonsEvent()
@@ -30,15 +30,15 @@ function buttonsEvent() {
     const inputPassword = document.querySelector(".section__input--password")
 
     buttonHome.addEventListener('click', () => {
-        window.location.replace("./pages/home.html")
+        window.location.replace("./src/pages/home.html")
     })
 
     buttonRegister.addEventListener('click', () => {
-        window.location.replace("./pages/register.html")
+        window.location.replace("./src/pages/register.html")
     })
 
     buttonRegisterSecound.addEventListener('click', () => {
-        window.location.replace("./pages/register.html")
+        window.location.replace("./src/pages/register.html")
     })
 
     buttonLogin.addEventListener('click', async () => {
@@ -60,11 +60,11 @@ function buttonsEvent() {
 
                 if (auth.isAdm) {
                     setTimeout(() => {
-                        window.location.replace("./pages/dashboardAdmin.html")
+                        window.location.replace("./src/pages/dashboardAdmin.html")
                     }, 3000);
                 } else {
                     setTimeout(() => {
-                        window.location.replace("./pages/dashboardUser.html")
+                        window.location.replace("./src/pages/dashboardUser.html")
                     }, 3000);
                 }
             }

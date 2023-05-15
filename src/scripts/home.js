@@ -29,7 +29,7 @@ function headerRedirection() {
     })
 
     buttonLogin.addEventListener('click', () => {
-        window.location.replace("../index.html")
+        window.location.replace("../../")
     })
 }
 

@@ -24,7 +24,7 @@ function buttonEvent() {
 
     buttonLogout.addEventListener('click', () => {
         localStorage.clear()
-        window.location.replace("../index.html")
+        window.location.replace("../../")
     })
 }
 

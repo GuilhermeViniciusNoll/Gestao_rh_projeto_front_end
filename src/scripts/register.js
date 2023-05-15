@@ -35,11 +35,11 @@ function buttonsEvent() {
     })
 
     buttonLogin.addEventListener('click', () => {
-        window.location.replace("../index.html")
+        window.location.replace("../../")
     })
 
     buttonReturn.addEventListener('click', () => {
-        window.location.replace("../index.html")
+        window.location.replace("../../")
     })
 
     buttonRegister.addEventListener('click', async () => {
@@ -57,7 +57,7 @@ function buttonsEvent() {
             const res = await requestCreateEmployees(inputName.value, inputEmail.value, inputPassword.value)
             setTimeout(() => {
                 if (res) {
-                    window.location.replace("../index.html")
+                    window.location.replace("../../")
                 }
             }, 3000);
         }
