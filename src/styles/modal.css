@@ -395,7 +395,8 @@
 
 .dialog__ul-employees {
 
-    max-width: 95%;
+    width: 90%;
+    max-width: 90%;
     height: 60%;
     padding: 25px 25px 0px 25px;
 
