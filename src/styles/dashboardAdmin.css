@@ -96,7 +96,7 @@
 
     list-style-type: none;
 
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .section__li {
@@ -227,7 +227,7 @@
 
     list-style-type: none;
 
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .section__li-users {

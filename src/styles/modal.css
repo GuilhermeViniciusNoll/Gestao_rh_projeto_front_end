@@ -407,7 +407,7 @@
 
     background-color: var(--grey-scale-5);
 
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .modal-view-users__li {

@@ -124,7 +124,7 @@
     justify-content: space-evenly;
     gap: 25px;
 
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .section__li {

@@ -1,5 +1,5 @@
 
-import { toast } from "./toast.js"
+import { toast, toastModal } from "./toast.js"
 
 const baseURL = 'http://localhost:3333'
 
@@ -144,10 +144,10 @@ export async function requestCreateDepartment(name, description, company_id, tok
     }).then(async (res) => {
         if (res.ok) {
             const response = await res.json()
-            toast('pass','Departamento Criado!')
+            toastModal('pass','Departamento Criado!')
             return true
         } else {
-            toast('fail','Falha, o departamento ja existe!')
+            toastModal('fail','Falha, o departamento ja existe!')
             return false
         }
     })
@@ -188,10 +188,10 @@ export async function requestUpdateEmployee(employee_id, name, email, token) {
     }).then(async (res) => {
         if (res.ok) {
             const response = await res.json()
-            toast('pass','Sucesso, Dados alterados!')
+            toastModal('pass','Sucesso, Dados alterados!')
             return true
         } else {
-            toast('fail','Nome ou email ja cadastrado!')
+            toastModal('fail','Nome ou email ja cadastrado!')
             return false
         }
     })
@@ -250,10 +250,10 @@ export async function requestUpdateDepartment(department_id, name, description, 
     }).then(async (res) => {
         if (res.ok) {
             const response = await res.json()
-            toast('pass','Sucesso, Dados alterados!')
+            toastModal('pass','Sucesso, Dados alterados!')
             return true
         } else {
-            toast('fail','Falha')
+            toastModal('fail','Falha')
             return false
         }
     })
@@ -310,10 +310,10 @@ export async function requestHireEmployee(employee_id, department_id, token) {
     }).then(async (res) => {
         if (res.ok) {
             const response = await res.json()
-            toast('pass','Funcionário contratado!')
+            toastModal('pass','Funcionário contratado!')
             return true
         } else {
-            toast('fail','Falha')
+            toastModal('fail','Falha')
             return false
         }
     })
@@ -330,10 +330,10 @@ export async function requestDismissEmployee(employee_id, token) {
     }).then(async (res) => {
         if (res.ok) {
             const response = await res.json()
-            toast('pass','Sucesso, funcionário demitido!')
+            toastModal('pass','Sucesso, funcionário demitido!')
             return true
         } else {
-            toast('fail','Falha')
+            toastModal('fail','Falha')
             return false
         }
     })

@@ -16,6 +16,24 @@
     animation: fadeIn 1s linear;
   }
   
+  .toast-modal__container {
+    position: fixed;
+    top: 0px;
+    left: 42%;
+  
+    width: 250px;
+    height: 80px;
+
+    border-radius: 0px 0px 50px 50px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    animation: fadeIn 1s linear;
+  }
+
   .hidden {
     display: none;
   }
